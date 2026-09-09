@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeTarget) {
         const phrases = [
             "Computer Scientist",
-            "Design + Code Architect",
+            "Data, Design, + Curiousity",
             "Future UX Researcher & Product Designer"
 ];
         let phraseIdx = 0;
