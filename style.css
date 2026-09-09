@@ -674,6 +674,8 @@ a {
     padding: 32px; /* Marginally deeper padding since it's the solo focus point */
     display: flex;
     flex-direction: column;
+    min-width: 0;
+    overflow-x: hidden;
     transition: var(--transition-smooth);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
@@ -745,6 +747,33 @@ a {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+
+.project-visuals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin: 14px 0;
+}
+
+.visual-thumb {
+    min-width: 0;
+}
+
+.visual-thumb img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.visual-caption {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+    line-height: 1.4;
 }
 
 .tech-tags {
