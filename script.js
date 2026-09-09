@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- 2. Mobile Responsive Hamburguer Panel Toggle ---
+    // --- 2. Mobile Responsive Hamburger Panel Toggle ---
     const hamburger = document.querySelector('.hamburger');
     const navLinksContainer = document.querySelector('.nav-links');
 
@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const typeTarget = document.querySelector('.typing-target');
     if (typeTarget) {
         const phrases = [
-            "Computer Science Student",
+            "Computer Scientist",
             "Design + Code Architect",
-            "Future Software Engineer"
-        ];
+            "Future UX Researcher & Product Designer"
+];
         let phraseIdx = 0;
         let charIdx = 0;
         let isDeleting = false;
