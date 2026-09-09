@@ -11,7 +11,7 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">&lt;<span>codedby</span>.millani/&gt;</a>
+            <a href="index.html" class="logo">&lt;<span>codeby</span>.millani/&gt;</a>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -32,33 +32,113 @@
 
         <div class="filter-wrapper">
             <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="software">Frontend</button>
             <button class="filter-btn" data-filter="ux-ui">UX/UI</button>
+            <button class="filter-btn" data-filter="software">Frontend</button>
             <button class="filter-btn" data-filter="data">Backend</button>
         </div>
 
         <div class="projects-grid" id="projects-container">
-            
+
+            <div class="project-card" data-category="ux-ui">
+                <div class="project-header">
+                    <span class="proj-category"><i class="fa-solid fa-magnifying-glass"></i> UX Research & Design</span>
+                </div>
+                <h3>ChoreBear — Roommate Chore Management App</h3>
+                <p class="project-tagline">Led mixed-methods user research and translated findings into personas, requirements, and an interactive prototype for a household chore-management app.</p>
+
+                <div class="project-section-title">The Problem</div>
+                <p class="project-text">Roommates struggle to fairly divide chores, and discomfort with confrontation often means the issue never actually gets addressed, it just builds into resentment instead.</p>
+
+                <div class="project-visuals">
+                    <div class="visual-thumb">
+                        <img src="assets/chorebear/dashboard.png" alt="ChoreBear dashboard screen">
+                        <p class="visual-caption">The dashboard, the first thing a user sees each time they open the app.</p>
+                    </div>
+                    <div class="visual-thumb">
+                        <img src="assets/chorebear/chore.png" alt="ChoreBear assign chores screen">
+                        <p class="visual-caption">Assign Chores, built directly from the finding that most participants had no clear system for dividing responsibility.</p>
+                    </div>
+                </div>
+
+                <div class="project-section-title">My Contributions</div>
+                <ul class="project-bullets">
+                    <li>Co-designed a mixed-methods study (22-response survey + 6 in-depth interviews, 28 participants total) and personally authored the interview guide and digital questionnaire.</li>
+                    <li>Conducted and synthesized interviews to develop two evidence-based personas that anchored the team's design priorities.</li>
+                    <li>Translated research findings into 10 functional and 7 non-functional requirements, tracing each feature directly back to a specific user pain point.</li>
+                    <li>Presented the final interactive prototype in a recorded walkthrough, articulating design rationale for each screen to the class.</li>
+                </ul>
+
+                <div class="project-section-title">Challenges & Solutions</div>
+                <p class="project-text">Usability testing on the prototype showed that assigning a chore took roughly 15 seconds, well above the ~6 second average for other tasks. I traced this to unclear labeling in the navigation, and it became our top priority going into the next design iteration.</p>
+
+                <div class="tech-tags">
+                    <span>Figma</span><span>User Research</span><span>Persona Development</span><span>Requirements Traceability</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.figma.com/proto/ATnasIlQiG4PH0tA3LkR4h/chorebear-digital-prototype?node-id=1-3&starting-point-node-id=1%3A3&t=VkgVEQH9nX6117mh-1" target="_blank" class="btn btn-card"><i class="fa-brands fa-figma"></i> Prototype</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="data">
+                <div class="project-header">
+                    <span class="proj-category"><i class="fa-solid fa-paw"></i> Backend & PM</span>
+                </div>
+                <h3>BudgetPet — Gamified Personal Finance App</h3>
+                <p class="project-tagline">Led product development for a budgeting app that uses a virtual pet to make tracking expenses feel motivating instead of tedious.</p>
+
+                <div class="project-section-title">The Problem</div>
+                <p class="project-text">Budgeting apps tend to land on one extreme, either too spreadsheet-heavy to stick with, or too gamified to feel trustworthy with real money. We wanted something that held both.</p>
+
+                <div class="project-visuals">
+                    <div class="visual-thumb">
+                        <img src="assets/budgetpet/homepage.png" alt="BudgetPet dashboard with pet stats and AI coach">
+                        <p class="visual-caption">The live dashboard, tracking budget stats alongside the AI-powered pet coach.</p>
+                    </div>
+                    <div class="visual-thumb">
+                        <img src="assets/budgetpet/budgetpetflow.png" alt="BudgetPet screens mapped into a user flow in Figma">
+                        <p class="visual-caption">The actual flow-mapping work: live screens organized in Figma to trace the path from landing to dashboard.</p>
+                    </div>
+                </div>
+
+                <div class="project-section-title">My Contributions</div>
+                <ul class="project-bullets">
+                    <li>Led product development for a 5-person team building the app around a virtual pet companion tied to spending habits.</li>
+                    <li>Took the live front-end and organized it into a clickable multi-page Figma prototype, mapping the user flow to guide further design and development decisions.</li>
+                    <li>Designed the MongoDB data architecture, structuring collections for users, pets, and expenses to support core functionality.</li>
+                    <li>Built core REST API routes and business logic as backend lead, managing environment configuration and version control via Git/GitHub.</li>
+                </ul>
+
+                <div class="project-section-title">Challenges & Solutions</div>
+                <p class="project-text">Without an original design file to start from, mapping the working product into a coherent flow meant reconstructing the logic after the fact. I organized the real screens into ordered frames and built click-through interactions in Figma, which gave the team something reviewable even without wireframes to start.</p>
+
+                <div class="tech-tags">
+                    <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Figma</span><span>OpenAI API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/AngelP29/BudgetPet" target="_blank" class="btn btn-card"><i class="fa-brands fa-github"></i> GitHub Repo (Team Member Owned)</a>
+                </div>
+            </div>
+
             <div class="project-card" data-category="data">
                 <div class="project-header">
                     <span class="proj-category"><i class="fa-solid fa-database"></i> Backend & PM</span>
                 </div>
                 <h3>Personal Contact Manager</h3>
-                <p class="project-tagline">Developed a secure, web-based contact management application featuring full CRUD capabilities and user authentication.</p>
+                <p class="project-tagline">Built a secure contact management app with full CRUD functionality and user authentication.</p>
                 
                 <div class="project-section-title">The Problem</div>
-                <p class="project-text">Managing personal connections securely requires reliable data isolation and structured communication pipelines between client-side interfaces and backend databases.</p>
+                <p class="project-text">Managing contacts across a shared system means each user needs to see only their own data, and the frontend and backend need to stay reliably in sync as the app grows.</p>
                 
                 <div class="project-section-title">My Contributions</div>
                 <ul class="project-bullets">
-                    <li>Designed and implemented the remote MySQL relational database schema normalized to 3NF.</li>
-                    <li>Authored back-end structural assets and coordinated full-stack JSON API contracts using SwaggerHub.</li>
-                    <li>Served as Project Manager for a team of 5, establishing Gantt milestone timelines and Git workflows.</li>
-                    <li>Deployed and tested the live production application environment using a DigitalOcean Linux server.</li>
+                    <li>Designed the MySQL relational schema, normalized to reduce redundancy and support authenticated users and contact records.</li>
+                    <li>Built and documented the backend API in PHP using SwaggerHub, so the frontend always had an accurate contract to build against.</li>
+                    <li>Led the project as PM for a 5-person team, setting milestones and managing our Git workflow.</li>
+                    <li>Deployed and tested the live application on a DigitalOcean Linux server.</li>
                 </ul>
                 
                 <div class="project-section-title">Challenges & Solutions</div>
-                <p class="project-text">Integrating newly developed API endpoints with the frontend caused version mismatches and broken repository branches. To solve this, I managed our Git source control workflow, isolation testing, and structured debugging sessions to successfully synchronize the database-to-frontend pipeline.</p>
+                <p class="project-text">Connecting new backend endpoints to the frontend kept causing version mismatches and broken branches. Tightening up our Git workflow and adding isolated testing steps fixed the sync issues for good.</p>
 
                 <div class="tech-tags">
                     <span>MySQL</span><span>PHP</span><span>Git</span>
@@ -69,61 +149,33 @@
                 </div>
             </div>
 
-            <div class="project-card" data-category="ux-ui">
-                <div class="project-header">
-                    <span class="proj-category"><i class="fa-solid fa-bezier-curve"></i> UX/UI</span>
-                </div>
-                <h3>ChoreBear Management App</h3>
-                <p class="project-tagline">Designed user paths and functional prototypes for a household management system based on direct stakeholder feedback.</p>
-                
-                <div class="project-section-title">The Problem</div>
-                <p class="project-text">Shared living spaces often suffer from accountability friction due to invisible labor and poor task distribution systems.</p>
-                
-                <div class="project-section-title">My Contributions</div>
-                <ul class="project-bullets">
-                    <li>Extracted system user specifications by processing a research pipeline of 28 survey responses and 8 interviews.</li>
-                    <li>Engineered an operational Excel tracking schema to measure user interaction bottlenecks within a team of 6.</li>
-                    <li>Translated raw user behavioral data into an interactive visual prototype targeting high user-retention intent.</li>
-                </ul>
-                
-                <div class="project-section-title">Challenges & Solutions</div>
-                <p class="project-text">Initial logic mapping revealed a critical navigation bottleneck causing a 3x increase in task latency. I isolated the structural layout issue through user flow data analytics, redesigning the functional logic to clear the bottleneck.</p>
-
-                <div class="tech-tags">
-                    <span>Figma</span><span>UX Research</span><span>Excel</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://www.figma.com/proto/ATnasIlQiG4PH0tA3LkR4h/chorebear-digital-prototype?node-id=1-3&starting-point-node-id=1%3A3&t=VkgVEQH9nX6117mh-1" target="_blank" class="btn btn-card"><i class="fa-brands fa-figma"></i> Prototype</a>
-                </div>
-            </div>
-
             <div class="project-card" data-category="software">
                 <div class="project-header">
                     <span class="proj-category"><i class="fa-solid fa-laptop-code"></i> Frontend</span>
                 </div>
                 <h3>Professional Portfolio Website</h3>
-                <p class="project-tagline">Engineered a responsive developer portfolio platform designed to market technical engineering assets and case studies to recruiting teams.</p>
+                <p class="project-tagline">This site. Built to actually show how I think and work, not just list it on a resume.</p>
                 
                 <div class="project-section-title">The Problem</div>
-                <p class="project-text">Static tech resumes fail to communicate interactive design intuition, asset accessibility, or clean frontend script engineering to modern technical talent acquisition managers.</p>
+                <p class="project-text">A static resume can't really demonstrate design sense or how I build something end to end. This site was a chance to show it directly instead of describing it.</p>
                 
                 <div class="project-section-title">My Contributions</div>
                 <ul class="project-bullets">
-                    <li>Authored a semantic, modern HTML5 structural layout optimized for clean browser parsing and search discoverability.</li>
-                    <li>Developed custom, responsive CSS3 grid and flexbox architectures to guarantee pixel-perfect asset layouts across diverse mobile and desktop viewports.</li>
-                    <li>Programmed client-side interactive component filters utilizing vanilla JavaScript for smooth project filter animations and asynchronous event handling.</li>
-                    <li>Integrated font icons, web assets, and structured document downloaders while ensuring clean directory architecture.</li>
+                    <li>Built the site with semantic HTML5, structured to be easy for both people and search engines to read.</li>
+                    <li>Wrote custom responsive CSS with flexbox and grid so the layout holds up across screen sizes.</li>
+                    <li>Added interactive project filtering with vanilla JavaScript.</li>
+                    <li>Set up the file structure, assets, and downloadable resume link.</li>
                 </ul>
                 
                 <div class="project-section-title">Challenges & Solutions</div>
-                <p class="project-text">Handling cross-device viewport responsiveness for complex multi-column filter layouts can introduce layout breaking and alignment shifts. I resolved this by enforcing mobile-first media queries and relative typography units, keeping card flows flexible.</p>
+                <p class="project-text">Getting the project cards to hold their layout across different screen sizes took real trial and error. Mobile-first media queries and relative sizing units fixed most of the breakage.</p>
 
                 <div class="tech-tags">
                     <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Git</span>
                 </div>
                 <div class="project-links">
                     <a href="index.html" class="btn btn-card"><i class="fa-solid fa-globe"></i> Live View</a>
-                    <a href="https://github.com/codedbymillani/portfolio" target="_blank" class="btn btn-card"><i class="fa-brands fa-github"></i> Source Code</a>
+                    <a href="https://github.com/codebymillani/portfolio" target="_blank" class="btn btn-card"><i class="fa-brands fa-github"></i> Source Code</a>
                 </div>
             </div>
 
@@ -132,21 +184,21 @@
         <span class="proj-category"><i class="fa-solid fa-server"></i> Backend & Automation</span>
     </div>
     <h3>Book Scraper API & Excel Dashboard</h3>
-    <p class="project-tagline">Built a dynamic web scraper API that automatically tracks book prices and generates formatted spreadsheet reports.</p>
+    <p class="project-tagline">Built a small API that scrapes book prices and turns them into a formatted Excel report automatically.</p>
     
     <div class="project-section-title">The Problem</div>
-    <p class="project-text">Manually checking websites to track product prices and copying data into Excel spreadsheets is slow, repetitive, and prone to human typos.</p>
+    <p class="project-text">Manually checking a site for prices and copying them into a spreadsheet is slow and easy to get wrong.</p>
     
     <div class="project-section-title">My Contributions</div>
     <ul class="project-bullets">
-        <li>Coded a flexible web scraper using <strong>FastAPI</strong> and <strong>BeautifulSoup</strong> to pull live book titles and prices automatically.</li>
-        <li>Implemented a dynamic query parameter loop so users can change how many pages they want to scrape directly from their web browser.</li>
-        <li>Deployed the live running API to <strong>Render</strong>, providing a public cloud address and an interactive Swagger documentation dashboard.</li>
-        <li>Programmed a synchronization script with <strong>OpenPyXL</strong> that pulls the API data and builds an Excel sheet complete with alternating colors, mathematical formulas, and a visual bar chart.</li>
+        <li>Built a <strong>FastAPI</strong> scraper using <strong>BeautifulSoup</strong> to pull book titles, prices, and metadata automatically.</li>
+        <li>Added a query parameter so anyone can control how many pages get scraped, right from the URL, with no code changes needed.</li>
+        <li>Deployed it to <strong>Render</strong> with interactive Swagger docs so the API is actually usable by someone else.</li>
+        <li>Wrote a script with <strong>OpenPyXL</strong> that turns the scraped data into a formatted Excel report, complete with a bar chart.</li>
     </ul>
     
     <div class="project-section-title">Challenges & Solutions</div>
-    <p class="project-text">Hardcoded scraping scripts usually break if you want more data. To solve this, I designed the API to take numbers directly from the web address string, allowing anyone to change the scraping depth on the fly without changing lines of code.</p>
+    <p class="project-text">Hardcoded scraping scripts break the moment you want more data. Building the page range into the URL itself meant anyone could adjust scraping depth without touching the code.</p>
 
     <div class="tech-tags">
         <span>Python</span><span>FastAPI</span><span>BeautifulSoup</span><span>OpenPyXL</span><span>Render</span>
@@ -155,7 +207,7 @@
         <a href="https://book-scraper-api-excel-dashboard.onrender.com/docs" target="_blank" class="btn btn-card"><i class="fa-solid fa-bolt"></i> Interactive API Docs</a>
         
         <a href="https://book-scraper-api-excel-dashboard.onrender.com/docs#/default/download_excel_dashboard_api_v1_books_download_get" target="_blank" class="btn btn-card"><i class="fa-solid fa-file-excel"></i> Download Excel Report</a>        
-        <a href="https://github.com/codedbymillani/Book-Scraper-API-Excel-Dashboard" target="_blank" class="btn btn-card"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+        <a href="https://github.com/codebymillani/Book-Scraper-API-Excel-Dashboard" target="_blank" class="btn btn-card"><i class="fa-brands fa-github"></i> GitHub Repo</a>
     </div>
 </div>
 
@@ -166,7 +218,7 @@
         <div class="container footer-content">
             <p>&copy; 2026 Millani Khabir.</p>
             <div class="footer-socials">
-                <a href="https://github.com/millanik" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/codebymillani" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://linkedin.com/in/millanik" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
