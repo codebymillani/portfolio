@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- 2. Mobile Responsive Hamburger Panel Toggle ---
+    // --- 2. Mobile Responsive Hamburguer Panel Toggle ---
     const hamburger = document.querySelector('.hamburger');
     const navLinksContainer = document.querySelector('.nav-links');
 
@@ -29,47 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 3. Typing Text Effect Logic ---
-    const typeTarget = document.querySelector('.typing-target');
-    if (typeTarget) {
-        const phrases = [
-            "Computer Scientist",
-            "Data, Design, + Curiousity",
-            "Future UX Researcher & Product Designer"
-];
-        let phraseIdx = 0;
-        let charIdx = 0;
-        let isDeleting = false;
-        let typingSpeed = 80;
-
-        function typeLoop() {
-            const currentPhrase = phrases[phraseIdx];
-            
-            if (isDeleting) {
-                typeTarget.textContent = currentPhrase.substring(0, charIdx - 1);
-                charIdx--;
-                typingSpeed = 40;
-            } else {
-                typeTarget.textContent = currentPhrase.substring(0, charIdx + 1);
-                charIdx++;
-                typingSpeed = 80;
-            }
-
-            if (!isDeleting && charIdx === currentPhrase.length) {
-                typingSpeed = 1500; // Pause at end of text
-                isDeleting = true;
-            } else if (isDeleting && charIdx === 0) {
-                isDeleting = false;
-                phraseIdx = (phraseIdx + 1) % phrases.length;
-                typingSpeed = 400; // Slight pause before restarting
-            }
-
-            setTimeout(typeLoop, typingSpeed);
-        }
-        typeLoop();
-    }
-
-    // --- 4. Portfolio Cards Category Filter Control ---
+    // --- 3. Portfolio Cards Category Filter Control ---
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -97,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 5. Scroll Reveal Animation Logic ---
+    // --- 4. Scroll Reveal Animation Logic ---
     const revealItems = document.querySelectorAll('.scroll-reveal');
     if (revealItems.length > 0) {
         const revealOnScroll = () => {
